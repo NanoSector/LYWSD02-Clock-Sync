@@ -9,19 +9,38 @@
 /* Begin PBXBuildFile section */
 		CD0E1B782735A9FE00FE4477 /* LYWSD02_Clock_SyncApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0E1B682735A9FD00FE4477 /* LYWSD02_Clock_SyncApp.swift */; };
 		CD0E1B792735A9FE00FE4477 /* LYWSD02_Clock_SyncApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0E1B682735A9FD00FE4477 /* LYWSD02_Clock_SyncApp.swift */; };
-		CD0E1B7A2735A9FE00FE4477 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0E1B692735A9FD00FE4477 /* ContentView.swift */; };
-		CD0E1B7B2735A9FE00FE4477 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0E1B692735A9FD00FE4477 /* ContentView.swift */; };
 		CD0E1B7C2735A9FE00FE4477 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD0E1B6A2735A9FE00FE4477 /* Assets.xcassets */; };
 		CD0E1B7D2735A9FE00FE4477 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD0E1B6A2735A9FE00FE4477 /* Assets.xcassets */; };
+		CD0E1BDF2736D3BC00FE4477 /* BLEDeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0E1BD92736D3BC00FE4477 /* BLEDeviceModel.swift */; };
+		CD0E1BE02736D3BC00FE4477 /* BLEDeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0E1BD92736D3BC00FE4477 /* BLEDeviceModel.swift */; };
+		CD0E1BE12736D3BC00FE4477 /* BinUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0E1BDA2736D3BC00FE4477 /* BinUtils.swift */; };
+		CD0E1BE22736D3BC00FE4477 /* BinUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0E1BDA2736D3BC00FE4477 /* BinUtils.swift */; };
+		CD0E1BE32736D3BC00FE4477 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0E1BDB2736D3BC00FE4477 /* Time.swift */; };
+		CD0E1BE42736D3BC00FE4477 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0E1BDB2736D3BC00FE4477 /* Time.swift */; };
+		CD0E1BE72736D3BC00FE4477 /* LYWSD02.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0E1BDD2736D3BC00FE4477 /* LYWSD02.swift */; };
+		CD0E1BE82736D3BC00FE4477 /* LYWSD02.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0E1BDD2736D3BC00FE4477 /* LYWSD02.swift */; };
+		CD0E1BE92736D3BC00FE4477 /* BluetoothClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0E1BDE2736D3BC00FE4477 /* BluetoothClient.swift */; };
+		CD0E1BEA2736D3BC00FE4477 /* BluetoothClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0E1BDE2736D3BC00FE4477 /* BluetoothClient.swift */; };
+		CD0E1BEE2736D41900FE4477 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0E1BEC2736D41900FE4477 /* ContentView.swift */; };
+		CD0E1BEF2736D41900FE4477 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0E1BEC2736D41900FE4477 /* ContentView.swift */; };
+		CD0E1BF02736D41900FE4477 /* DeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0E1BED2736D41900FE4477 /* DeviceView.swift */; };
+		CD0E1BF12736D41900FE4477 /* DeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0E1BED2736D41900FE4477 /* DeviceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CD0E1B682735A9FD00FE4477 /* LYWSD02_Clock_SyncApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYWSD02_Clock_SyncApp.swift; sourceTree = "<group>"; };
-		CD0E1B692735A9FD00FE4477 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CD0E1B6A2735A9FE00FE4477 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD0E1B6F2735A9FE00FE4477 /* LYWSD02 Clock Sync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LYWSD02 Clock Sync.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD0E1B752735A9FE00FE4477 /* LYWSD02 Clock Sync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LYWSD02 Clock Sync.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD0E1B772735A9FE00FE4477 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		CD0E1BD92736D3BC00FE4477 /* BLEDeviceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEDeviceModel.swift; sourceTree = "<group>"; };
+		CD0E1BDA2736D3BC00FE4477 /* BinUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinUtils.swift; sourceTree = "<group>"; };
+		CD0E1BDB2736D3BC00FE4477 /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		CD0E1BDD2736D3BC00FE4477 /* LYWSD02.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYWSD02.swift; sourceTree = "<group>"; };
+		CD0E1BDE2736D3BC00FE4477 /* BluetoothClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothClient.swift; sourceTree = "<group>"; };
+		CD0E1BEC2736D41900FE4477 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CD0E1BED2736D41900FE4477 /* DeviceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceView.swift; sourceTree = "<group>"; };
+		CD0E1BF22736D44A00FE4477 /* LYWSD02-Clock-Sync--macOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "LYWSD02-Clock-Sync--macOS--Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +64,7 @@
 		CD0E1B622735A9FD00FE4477 = {
 			isa = PBXGroup;
 			children = (
+				CD0E1BF22736D44A00FE4477 /* LYWSD02-Clock-Sync--macOS--Info.plist */,
 				CD0E1B672735A9FD00FE4477 /* Shared */,
 				CD0E1B762735A9FE00FE4477 /* macOS */,
 				CD0E1B702735A9FE00FE4477 /* Products */,
@@ -54,8 +74,13 @@
 		CD0E1B672735A9FD00FE4477 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				CD0E1BEB2736D3F200FE4477 /* Views */,
+				CD0E1BDA2736D3BC00FE4477 /* BinUtils.swift */,
+				CD0E1BD92736D3BC00FE4477 /* BLEDeviceModel.swift */,
+				CD0E1BDE2736D3BC00FE4477 /* BluetoothClient.swift */,
+				CD0E1BDD2736D3BC00FE4477 /* LYWSD02.swift */,
+				CD0E1BDB2736D3BC00FE4477 /* Time.swift */,
 				CD0E1B682735A9FD00FE4477 /* LYWSD02_Clock_SyncApp.swift */,
-				CD0E1B692735A9FD00FE4477 /* ContentView.swift */,
 				CD0E1B6A2735A9FE00FE4477 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -76,6 +101,15 @@
 				CD0E1B772735A9FE00FE4477 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		CD0E1BEB2736D3F200FE4477 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CD0E1BEC2736D41900FE4477 /* ContentView.swift */,
+				CD0E1BED2736D41900FE4477 /* DeviceView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,8 +210,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD0E1B7A2735A9FE00FE4477 /* ContentView.swift in Sources */,
+				CD0E1BE32736D3BC00FE4477 /* Time.swift in Sources */,
 				CD0E1B782735A9FE00FE4477 /* LYWSD02_Clock_SyncApp.swift in Sources */,
+				CD0E1BEE2736D41900FE4477 /* ContentView.swift in Sources */,
+				CD0E1BE12736D3BC00FE4477 /* BinUtils.swift in Sources */,
+				CD0E1BDF2736D3BC00FE4477 /* BLEDeviceModel.swift in Sources */,
+				CD0E1BE72736D3BC00FE4477 /* LYWSD02.swift in Sources */,
+				CD0E1BF02736D41900FE4477 /* DeviceView.swift in Sources */,
+				CD0E1BE92736D3BC00FE4477 /* BluetoothClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,8 +225,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD0E1B7B2735A9FE00FE4477 /* ContentView.swift in Sources */,
+				CD0E1BE42736D3BC00FE4477 /* Time.swift in Sources */,
 				CD0E1B792735A9FE00FE4477 /* LYWSD02_Clock_SyncApp.swift in Sources */,
+				CD0E1BEF2736D41900FE4477 /* ContentView.swift in Sources */,
+				CD0E1BE22736D3BC00FE4477 /* BinUtils.swift in Sources */,
+				CD0E1BE02736D3BC00FE4477 /* BLEDeviceModel.swift in Sources */,
+				CD0E1BE82736D3BC00FE4477 /* LYWSD02.swift in Sources */,
+				CD0E1BF12736D41900FE4477 /* DeviceView.swift in Sources */,
+				CD0E1BEA2736D3BC00FE4477 /* BluetoothClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,14 +357,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TF97RG3V9E;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Bluetooth is used to connect to your clock";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -340,14 +388,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TF97RG3V9E;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Bluetooth is used to connect to your clock";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -372,8 +422,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "LYWSD02-Clock-Sync--macOS--Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Bluetooth is used to connect to your clock";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -398,8 +452,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "LYWSD02-Clock-Sync--macOS--Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Bluetooth is used to connect to your clock";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
