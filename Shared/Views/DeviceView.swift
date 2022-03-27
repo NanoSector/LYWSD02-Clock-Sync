@@ -59,10 +59,7 @@ struct DeviceView: View {
                 }
             }
             
-            GroupBox(label: Text("Device information and discovered capabilities")) {
-                
-                Text("\(peripheral.name) - \(peripheral.identifier)").font(.callout)
-                
+            GroupBox(label: Text("Discovered capabilities")) {
                 VStack(alignment: .leading) {
                     HStack {
                         Image(systemName: peripheral.hasTimeSupport ? "checkmark.circle.fill" : "xmark.circle")
@@ -86,12 +83,6 @@ struct DeviceView: View {
                 }.padding()
             }.padding()
         }.toolbar {
-            if let lastSynced = peripheral.lastSynced {
-                Text(lastSynced, style: .relative).font(.footnote)
-            } else {
-                Text("Not synced")
-            }
-            
             Button(action: {
                 peripheral.sync()
             }) {
@@ -122,12 +113,12 @@ struct DeviceView: View {
                     Text("Sync with device")
                 }
             }.padding()
-        }
+        }.navigationTitle(peripheral.name)
     }
 }
 
 // struct DeviceView_Previews: PreviewProvider {
 //    static var previews: some View {
-//        DeviceView()
+//        DeviceView(peripheral: BLEDeviceModel())
 //    }
 // }

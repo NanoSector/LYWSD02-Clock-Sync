@@ -14,18 +14,16 @@ class BLEDeviceModel: NSObject, ObservableObject, CBPeripheralDelegate {
     @Published private(set) var hasTemperatureSupport = false
     @Published private(set) var hasHumiditySupport = false
     
-    @Published private(set) var lastSynced: Date? = nil
-    
     @Published private(set) var batteryPercentage: Int? = nil
     @Published private(set) var currentTime: Date? = nil
     @Published private(set) var currentTemperature: Double? = nil
     @Published private(set) var currentHumidity: Int? = nil
     
+    @Published private(set) var name: String
+    
     private var _peripheral: CBPeripheral
     
     // MARK: Wrappers for CBPeripheral fields.
-    
-    var name: String { peripheral.name ?? "Unknown name" }
     var identifier: String { peripheral.identifier.uuidString }
     
     // get-only wrapper
@@ -33,13 +31,12 @@ class BLEDeviceModel: NSObject, ObservableObject, CBPeripheralDelegate {
     
     required init(_ peripheral: CBPeripheral) {
         self._peripheral = peripheral
+        self.name = peripheral.name ?? "Unknown name"
         super.init()
         peripheral.delegate = self
     }
     
     func sync() {
-        lastSynced = Date()
-        
         batteryPercentage = nil
         currentTime = nil
         
@@ -91,8 +88,7 @@ class BLEDeviceModel: NSObject, ObservableObject, CBPeripheralDelegate {
     }
     
     func peripheralDidUpdateName(_ peripheral: CBPeripheral) {
-        objectWillChange.send()
-        DateFormatter().string(from: lastSynced!)
+        self.name = peripheral.name ?? "Unknown name"
     }
     
     func peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: Error?) {

@@ -24,21 +24,16 @@ struct ContentView: View {
                 }
             }
             .toolbar {
-                if bleClient.scanning {
-                    Button(action: {
+                Button(action: {
+                    if bleClient.scanning {
                         bleClient.stopScan()
-                    }) {
-                        Image(systemName: "stop.circle.fill")
-                    }
-                    ProgressView().controlSize(.small)
-                } else {
-                    Button(action: {
+                    } else {
                         bleClient.triggerScan()
-                    }) {
-                        Image(systemName: "arrow.clockwise")
                     }
+                }) {
+                    Image(systemName: bleClient.scanning ? "stop.circle.fill" : "arrow.clockwise")
                 }
-            }
+            }.navigationTitle("Discovered Devices")
         }.environmentObject(bleClient)
             .onDisappear {
                 bleClient.stopScan()
