@@ -9,7 +9,7 @@ import CoreBluetooth
 import SwiftUI
 
 struct ClockListView: View {
-    @State var state: DiscoveryState
+    @Environment(DiscoveryState.self) private var state: DiscoveryState
     var bluetoothClient: BluetoothClockClient
 
     func toggleDiscovery() {
@@ -24,7 +24,12 @@ struct ClockListView: View {
         NavigationView {
             List {
                 ForEach(state.discovered, id: \.id) { clock in
-                    NavigationLink(destination: ClockDetailsView(clock: clock)) {
+                    NavigationLink(
+                        destination: ClockDetailsView(
+                            clock: clock,
+                            bluetoothClient: bluetoothClient
+                        )
+                    ) {
                         HStack(alignment: .center, spacing: 10) {
                             Image(systemName: "deskclock.fill")
                             VStack(alignment: .leading) {
@@ -34,7 +39,7 @@ struct ClockListView: View {
                         }
                     }
                 }
-                
+
                 if !state.discovered.isEmpty && state.discovering {
                     HStack(alignment: .center, spacing: 10) {
                         ProgressView()
@@ -51,7 +56,7 @@ struct ClockListView: View {
                     } else {
                         ContentUnavailableView {
                             Label("No clocks discovered", systemImage: "clock.badge.questionmark")
-                            
+
                             Button("Start discovering", action: toggleDiscovery)
                                 .buttonStyle(.bordered)
                         }
@@ -79,9 +84,8 @@ struct ClockListView: View {
     )
 
     return ClockListView(
-        state: state,
         bluetoothClient: MockBluetoothClockClient(delegate: state)
-    )
+    ).environment(state)
 }
 
 #Preview("Empty state, discovering") {
@@ -91,9 +95,8 @@ struct ClockListView: View {
     )
 
     return ClockListView(
-        state: state,
         bluetoothClient: MockBluetoothClockClient(delegate: state)
-    )
+    ).environment(state)
 }
 
 #Preview("Non-empty state, not discovering") {
@@ -103,9 +106,8 @@ struct ClockListView: View {
     )
 
     return ClockListView(
-        state: state,
         bluetoothClient: MockBluetoothClockClient(delegate: state)
-    )
+    ).environment(state)
 }
 
 #Preview("Non-empty state, discovering") {
@@ -115,7 +117,6 @@ struct ClockListView: View {
     )
 
     return ClockListView(
-        state: state,
         bluetoothClient: MockBluetoothClockClient(delegate: state)
-    )
+    ).environment(state)
 }

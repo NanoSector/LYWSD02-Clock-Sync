@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 public struct XiaomiLYWSD02ClockView: View {
-    var clock: any Clock
+    var clock: any ClockState
 
     public var body: some View {
         VStack {
@@ -19,7 +19,7 @@ public struct XiaomiLYWSD02ClockView: View {
                     .fontDesign(.monospaced)
                 
                 HStack(spacing: 20) {
-                    if let hygrometer = clock as? Hygrometer {
+                    if let hygrometer = clock as? HygrometerState {
                         HStack(alignment: .bottom, spacing: 0) {
                             Text(String(hygrometer.humidity))
                                 .fontDesign(.monospaced)
@@ -30,7 +30,7 @@ public struct XiaomiLYWSD02ClockView: View {
                         }
                     }
                     
-                    if let thermometer = clock as? Thermometer {
+                    if let thermometer = clock as? ThermometerState {
                         HStack(alignment: .bottom, spacing: 0) {
                             Text(String(thermometer.temperature))
                                 .fontDesign(.monospaced)
@@ -65,6 +65,6 @@ public struct XiaomiLYWSD02ClockView: View {
 }
 
 #Preview("Mock clock") {
-    XiaomiLYWSD02ClockView(clock: MockClock())
+    XiaomiLYWSD02ClockView(clock: MockClockState())
         .previewLayout(.sizeThatFits)
 }

@@ -9,14 +9,12 @@ import SwiftUI
 
 @main
 struct Application: App {
-    let state = DiscoveryState()
+    @State private var state = DiscoveryState()
     
     var body: some Scene {
         WindowGroup {
-            ClockListView(
-                state: state,
-                bluetoothClient: MockBluetoothClockClient(delegate: state)
-            )
+            ClockListView(bluetoothClient: CoreBluetoothClockClient(delegate: self.state))
+                .environment(state)
         }
     }
 }

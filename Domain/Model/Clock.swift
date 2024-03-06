@@ -7,10 +7,11 @@
 
 import Foundation
 
-protocol Clock: Identifiable {
+protocol Clock: Identifiable, Observable {
+    associatedtype State: ClockState
+    
     var id: UUID { get }
     var friendlyName: String { get }
-    
     var kind: ClockModel { get }
-    var time: Time { get set }
+    var lastState: State? { get set }
 }

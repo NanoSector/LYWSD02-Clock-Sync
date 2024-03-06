@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol Thermometer {
+protocol ThermometerState {
     var temperatureUnit: UnitTemperature { get }
     var temperature: Float { get }
 }

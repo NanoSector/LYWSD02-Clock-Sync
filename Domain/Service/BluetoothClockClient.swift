@@ -19,18 +19,6 @@ protocol BluetoothClockDiscoveryDelegate {
     /// - Parameters:
     ///   - clock: The clock device that was lost
     func onDeviceLost(_ clock: any Clock) -> Void
-
-    /// Called when a supported clock device was connected.
-    ///
-    /// - Parameters:
-    ///   - clock: The clock device that was connected
-    func onDeviceConnected(_ clock: any Clock) -> Void
-
-    /// Called when a supported clock device was disconnected.
-    ///
-    /// - Parameters:
-    ///   - clock: The clock device that was disconnected
-    func onDeviceDisconnected(_ clock: any Clock) -> Void
     
     func onDiscoveryStarted() -> Void
     func onDiscoveryStopped() -> Void
@@ -69,12 +57,10 @@ struct MockBluetoothClockClient: BluetoothClockClient {
     }
     
     func connect(to clock: any Clock) throws {
-        delegate?.onDeviceConnected(clock)
+        // no-op, mock clock is always connected
     }
     
     func disconnect(from clock: any Clock) throws {
-        delegate?.onDeviceDisconnected(clock)
+        // no-op, mock clock is always connected
     }
-    
-    
 }

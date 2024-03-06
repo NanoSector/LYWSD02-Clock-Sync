@@ -8,34 +8,28 @@
 import Foundation
 
 @Observable class DiscoveryState: BluetoothClockDiscoveryDelegate {
-    var connected: (any Clock)? = nil
     var discovered: [any Clock] = []
     var discovering: Bool = false
     
     init() {}
     
-    init(connected: (any Clock)? = nil, discovered: [any Clock], discovering: Bool) {
-        self.connected = connected
+    init(discovered: [any Clock], discovering: Bool) {
         self.discovered = discovered
         self.discovering = discovering
     }
     
     func onDeviceFound(_ clock: any Clock) {
         if (!discovered.contains(where: { $0.id == clock.id })) {
+            // TODO: Remove hack
+            if let xiaomi = clock as? XiaomiLYWSD02 {
+                xiaomi.getPeripheral().delegate = xiaomi
+            }
             discovered.append(clock)
         }
     }
     
     func onDeviceLost(_ clock: any Clock) {
         discovered.removeAll(where: { $0.id == clock.id })
-    }
-    
-    func onDeviceConnected(_ clock: any Clock) {
-        self.connected = clock
-    }
-    
-    func onDeviceDisconnected(_ clock: any Clock) {
-        self.connected = nil
     }
     
     func onDiscoveryStarted() {

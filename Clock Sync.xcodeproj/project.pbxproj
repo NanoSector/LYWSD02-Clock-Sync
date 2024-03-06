@@ -11,26 +11,26 @@
 		CD0E1B792735A9FE00FE4477 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0E1B682735A9FD00FE4477 /* Application.swift */; };
 		CD0E1B7C2735A9FE00FE4477 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD0E1B6A2735A9FE00FE4477 /* Assets.xcassets */; };
 		CD0E1B7D2735A9FE00FE4477 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD0E1B6A2735A9FE00FE4477 /* Assets.xcassets */; };
-		CD0E1BDF2736D3BC00FE4477 /* BLEDeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0E1BD92736D3BC00FE4477 /* BLEDeviceModel.swift */; };
-		CD0E1BE02736D3BC00FE4477 /* BLEDeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0E1BD92736D3BC00FE4477 /* BLEDeviceModel.swift */; };
 		CD0E1BE12736D3BC00FE4477 /* BinUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0E1BDA2736D3BC00FE4477 /* BinUtils.swift */; };
 		CD0E1BE22736D3BC00FE4477 /* BinUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0E1BDA2736D3BC00FE4477 /* BinUtils.swift */; };
 		CD0E1BE32736D3BC00FE4477 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0E1BDB2736D3BC00FE4477 /* Time.swift */; };
-		CD0E1BE72736D3BC00FE4477 /* LYWSD02.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0E1BDD2736D3BC00FE4477 /* LYWSD02.swift */; };
-		CD0E1BE82736D3BC00FE4477 /* LYWSD02.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0E1BDD2736D3BC00FE4477 /* LYWSD02.swift */; };
-		CD0E1BE92736D3BC00FE4477 /* BluetoothClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0E1BDE2736D3BC00FE4477 /* BluetoothClient.swift */; };
-		CD0E1BEA2736D3BC00FE4477 /* BluetoothClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0E1BDE2736D3BC00FE4477 /* BluetoothClient.swift */; };
 		CD0E1BEE2736D41900FE4477 /* ClockListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0E1BEC2736D41900FE4477 /* ClockListView.swift */; };
 		CD0E1BEF2736D41900FE4477 /* ClockListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0E1BEC2736D41900FE4477 /* ClockListView.swift */; };
 		CD0E1BF02736D41900FE4477 /* ClockDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0E1BED2736D41900FE4477 /* ClockDetailsView.swift */; };
 		CD0E1BF12736D41900FE4477 /* ClockDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0E1BED2736D41900FE4477 /* ClockDetailsView.swift */; };
+		CD1C86F62B937C6B00E4E492 /* DeviceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1C86F52B937C6B00E4E492 /* DeviceError.swift */; };
+		CD1C86F72B937C6B00E4E492 /* DeviceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1C86F52B937C6B00E4E492 /* DeviceError.swift */; };
+		CD7A0BEB2B98EFB000A35A9A /* CoreBluetoothClockClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7A0BEA2B98EFB000A35A9A /* CoreBluetoothClockClient.swift */; };
+		CD7A0BEC2B98EFB000A35A9A /* CoreBluetoothClockClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7A0BEA2B98EFB000A35A9A /* CoreBluetoothClockClient.swift */; };
+		CD7A0BEE2B98F12A00A35A9A /* ClockState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7A0BED2B98F12A00A35A9A /* ClockState.swift */; };
+		CD7A0BEF2B98F12A00A35A9A /* ClockState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7A0BED2B98F12A00A35A9A /* ClockState.swift */; };
 		CD84F2282B925179006DF5F9 /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84F2272B925179006DF5F9 /* Clock.swift */; };
 		CD84F22B2B92531C006DF5F9 /* ConnectionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84F22A2B92531C006DF5F9 /* ConnectionError.swift */; };
 		CD84F22D2B92535C006DF5F9 /* ClockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84F22C2B92535C006DF5F9 /* ClockModel.swift */; };
 		CD84F22F2B9253D9006DF5F9 /* MockClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84F22E2B9253D9006DF5F9 /* MockClock.swift */; };
-		CD84F2312B9254B5006DF5F9 /* BatteryPowered.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84F2302B9254B5006DF5F9 /* BatteryPowered.swift */; };
-		CD84F2332B925584006DF5F9 /* Hygrometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84F2322B925584006DF5F9 /* Hygrometer.swift */; };
-		CD84F2352B92559D006DF5F9 /* Thermometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84F2342B92559D006DF5F9 /* Thermometer.swift */; };
+		CD84F2312B9254B5006DF5F9 /* BatteryState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84F2302B9254B5006DF5F9 /* BatteryState.swift */; };
+		CD84F2332B925584006DF5F9 /* HygrometerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84F2322B925584006DF5F9 /* HygrometerState.swift */; };
+		CD84F2352B92559D006DF5F9 /* ThermometerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84F2342B92559D006DF5F9 /* ThermometerState.swift */; };
 		CD84F2382B9255CB006DF5F9 /* XiaomiLYWSD02.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84F2372B9255CB006DF5F9 /* XiaomiLYWSD02.swift */; };
 		CD84F23B2B925764006DF5F9 /* BluetoothClockClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84F23A2B925764006DF5F9 /* BluetoothClockClient.swift */; };
 		CD84F23D2B925A6C006DF5F9 /* DiscoveryState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84F23C2B925A6C006DF5F9 /* DiscoveryState.swift */; };
@@ -39,12 +39,12 @@
 		CD84F2412B925D71006DF5F9 /* DiscoveryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84F23F2B925D71006DF5F9 /* DiscoveryError.swift */; };
 		CD84F2432B927F65006DF5F9 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84F2422B927F65006DF5F9 /* CardView.swift */; };
 		CD84F2442B927F65006DF5F9 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84F2422B927F65006DF5F9 /* CardView.swift */; };
-		CD98F28D2B936AE40066E56C /* Thermometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84F2342B92559D006DF5F9 /* Thermometer.swift */; };
+		CD98F28D2B936AE40066E56C /* ThermometerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84F2342B92559D006DF5F9 /* ThermometerState.swift */; };
 		CD98F28E2B936AEA0066E56C /* XiaomiLYWSD02.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84F2372B9255CB006DF5F9 /* XiaomiLYWSD02.swift */; };
-		CD98F28F2B936AED0066E56C /* BatteryPowered.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84F2302B9254B5006DF5F9 /* BatteryPowered.swift */; };
+		CD98F28F2B936AED0066E56C /* BatteryState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84F2302B9254B5006DF5F9 /* BatteryState.swift */; };
 		CD98F2902B936AEF0066E56C /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84F2272B925179006DF5F9 /* Clock.swift */; };
 		CD98F2912B936AF20066E56C /* ClockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84F22C2B92535C006DF5F9 /* ClockModel.swift */; };
-		CD98F2922B936AF50066E56C /* Hygrometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84F2322B925584006DF5F9 /* Hygrometer.swift */; };
+		CD98F2922B936AF50066E56C /* HygrometerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84F2322B925584006DF5F9 /* HygrometerState.swift */; };
 		CD98F2932B936AF70066E56C /* MockClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84F22E2B9253D9006DF5F9 /* MockClock.swift */; };
 		CD98F2942B936AFB0066E56C /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0E1BDB2736D3BC00FE4477 /* Time.swift */; };
 		CD98F2952B936B040066E56C /* ConnectionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84F22A2B92531C006DF5F9 /* ConnectionError.swift */; };
@@ -57,21 +57,21 @@
 		CD0E1B6F2735A9FE00FE4477 /* Clock Sync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clock Sync.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD0E1B752735A9FE00FE4477 /* Clock Sync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clock Sync.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD0E1B772735A9FE00FE4477 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		CD0E1BD92736D3BC00FE4477 /* BLEDeviceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEDeviceModel.swift; sourceTree = "<group>"; };
 		CD0E1BDA2736D3BC00FE4477 /* BinUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinUtils.swift; sourceTree = "<group>"; };
 		CD0E1BDB2736D3BC00FE4477 /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
-		CD0E1BDD2736D3BC00FE4477 /* LYWSD02.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYWSD02.swift; sourceTree = "<group>"; };
-		CD0E1BDE2736D3BC00FE4477 /* BluetoothClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothClient.swift; sourceTree = "<group>"; };
 		CD0E1BEC2736D41900FE4477 /* ClockListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockListView.swift; sourceTree = "<group>"; };
 		CD0E1BED2736D41900FE4477 /* ClockDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockDetailsView.swift; sourceTree = "<group>"; };
-		CD0E1BF22736D44A00FE4477 /* macOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "macOS-Info.plist"; sourceTree = "<group>"; };
+		CD0E1BF22736D44A00FE4477 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD1C86F52B937C6B00E4E492 /* DeviceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceError.swift; sourceTree = "<group>"; };
+		CD7A0BEA2B98EFB000A35A9A /* CoreBluetoothClockClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreBluetoothClockClient.swift; sourceTree = "<group>"; };
+		CD7A0BED2B98F12A00A35A9A /* ClockState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockState.swift; sourceTree = "<group>"; };
 		CD84F2272B925179006DF5F9 /* Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
 		CD84F22A2B92531C006DF5F9 /* ConnectionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionError.swift; sourceTree = "<group>"; };
 		CD84F22C2B92535C006DF5F9 /* ClockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockModel.swift; sourceTree = "<group>"; };
 		CD84F22E2B9253D9006DF5F9 /* MockClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockClock.swift; sourceTree = "<group>"; };
-		CD84F2302B9254B5006DF5F9 /* BatteryPowered.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryPowered.swift; sourceTree = "<group>"; };
-		CD84F2322B925584006DF5F9 /* Hygrometer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hygrometer.swift; sourceTree = "<group>"; };
-		CD84F2342B92559D006DF5F9 /* Thermometer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thermometer.swift; sourceTree = "<group>"; };
+		CD84F2302B9254B5006DF5F9 /* BatteryState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryState.swift; sourceTree = "<group>"; };
+		CD84F2322B925584006DF5F9 /* HygrometerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HygrometerState.swift; sourceTree = "<group>"; };
+		CD84F2342B92559D006DF5F9 /* ThermometerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThermometerState.swift; sourceTree = "<group>"; };
 		CD84F2372B9255CB006DF5F9 /* XiaomiLYWSD02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XiaomiLYWSD02.swift; sourceTree = "<group>"; };
 		CD84F23A2B925764006DF5F9 /* BluetoothClockClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothClockClient.swift; sourceTree = "<group>"; };
 		CD84F23C2B925A6C006DF5F9 /* DiscoveryState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryState.swift; sourceTree = "<group>"; };
@@ -103,20 +103,9 @@
 				CD84F2242B9250DA006DF5F9 /* Application */,
 				CD84F2232B9250C8006DF5F9 /* Domain */,
 				CD84F2252B92510D006DF5F9 /* Infrastructure */,
-				CD0E1B672735A9FD00FE4477 /* Shared */,
 				CD0E1B762735A9FE00FE4477 /* macOS */,
 				CD0E1B702735A9FE00FE4477 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		CD0E1B672735A9FD00FE4477 /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				CD0E1BD92736D3BC00FE4477 /* BLEDeviceModel.swift */,
-				CD0E1BDE2736D3BC00FE4477 /* BluetoothClient.swift */,
-				CD0E1BDD2736D3BC00FE4477 /* LYWSD02.swift */,
-			);
-			path = Shared;
 			sourceTree = "<group>";
 		};
 		CD0E1B702735A9FE00FE4477 /* Products */ = {
@@ -131,6 +120,7 @@
 		CD0E1B762735A9FE00FE4477 /* macOS */ = {
 			isa = PBXGroup;
 			children = (
+				CD0E1BF22736D44A00FE4477 /* Info.plist */,
 				CD0E1B772735A9FE00FE4477 /* macOS.entitlements */,
 			);
 			path = macOS;
@@ -149,9 +139,9 @@
 		CD84F2232B9250C8006DF5F9 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				CD84F2392B925755006DF5F9 /* Service */,
 				CD84F2292B92530E006DF5F9 /* Error */,
 				CD84F2262B92513C006DF5F9 /* Model */,
+				CD84F2392B925755006DF5F9 /* Service */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -161,7 +151,6 @@
 			children = (
 				CD0E1B682735A9FD00FE4477 /* Application.swift */,
 				CD0E1B6A2735A9FE00FE4477 /* Assets.xcassets */,
-				CD0E1BF22736D44A00FE4477 /* macOS-Info.plist */,
 				CD0E1BEB2736D3F200FE4477 /* Views */,
 			);
 			path = Application;
@@ -171,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				CD0E1BDA2736D3BC00FE4477 /* BinUtils.swift */,
+				CD7A0BEA2B98EFB000A35A9A /* CoreBluetoothClockClient.swift */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -178,14 +168,14 @@
 		CD84F2262B92513C006DF5F9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				CD84F2302B9254B5006DF5F9 /* BatteryPowered.swift */,
+				CD84F2302B9254B5006DF5F9 /* BatteryState.swift */,
 				CD84F2272B925179006DF5F9 /* Clock.swift */,
 				CD84F22C2B92535C006DF5F9 /* ClockModel.swift */,
 				CD84F2362B9255C1006DF5F9 /* Clocks */,
-				CD84F2322B925584006DF5F9 /* Hygrometer.swift */,
-				CD84F22E2B9253D9006DF5F9 /* MockClock.swift */,
-				CD84F2342B92559D006DF5F9 /* Thermometer.swift */,
+				CD84F2322B925584006DF5F9 /* HygrometerState.swift */,
+				CD84F2342B92559D006DF5F9 /* ThermometerState.swift */,
 				CD0E1BDB2736D3BC00FE4477 /* Time.swift */,
+				CD7A0BED2B98F12A00A35A9A /* ClockState.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -195,6 +185,7 @@
 			children = (
 				CD84F22A2B92531C006DF5F9 /* ConnectionError.swift */,
 				CD84F23F2B925D71006DF5F9 /* DiscoveryError.swift */,
+				CD1C86F52B937C6B00E4E492 /* DeviceError.swift */,
 			);
 			path = Error;
 			sourceTree = "<group>";
@@ -202,6 +193,7 @@
 		CD84F2362B9255C1006DF5F9 /* Clocks */ = {
 			isa = PBXGroup;
 			children = (
+				CD84F22E2B9253D9006DF5F9 /* MockClock.swift */,
 				CD84F2372B9255CB006DF5F9 /* XiaomiLYWSD02.swift */,
 			);
 			path = Clocks;
@@ -318,20 +310,20 @@
 				CD0E1BE32736D3BC00FE4477 /* Time.swift in Sources */,
 				CD0E1B782735A9FE00FE4477 /* Application.swift in Sources */,
 				CD0E1BEE2736D41900FE4477 /* ClockListView.swift in Sources */,
-				CD84F2332B925584006DF5F9 /* Hygrometer.swift in Sources */,
-				CD84F2352B92559D006DF5F9 /* Thermometer.swift in Sources */,
+				CD84F2332B925584006DF5F9 /* HygrometerState.swift in Sources */,
+				CD84F2352B92559D006DF5F9 /* ThermometerState.swift in Sources */,
 				CD84F22F2B9253D9006DF5F9 /* MockClock.swift in Sources */,
+				CD1C86F62B937C6B00E4E492 /* DeviceError.swift in Sources */,
 				CD84F2402B925D71006DF5F9 /* DiscoveryError.swift in Sources */,
 				CD0E1BE12736D3BC00FE4477 /* BinUtils.swift in Sources */,
 				CD84F23D2B925A6C006DF5F9 /* DiscoveryState.swift in Sources */,
-				CD0E1BDF2736D3BC00FE4477 /* BLEDeviceModel.swift in Sources */,
-				CD0E1BE72736D3BC00FE4477 /* LYWSD02.swift in Sources */,
 				CD84F23B2B925764006DF5F9 /* BluetoothClockClient.swift in Sources */,
 				CD84F2382B9255CB006DF5F9 /* XiaomiLYWSD02.swift in Sources */,
 				CD84F2432B927F65006DF5F9 /* CardView.swift in Sources */,
 				CD0E1BF02736D41900FE4477 /* ClockDetailsView.swift in Sources */,
-				CD0E1BE92736D3BC00FE4477 /* BluetoothClient.swift in Sources */,
-				CD84F2312B9254B5006DF5F9 /* BatteryPowered.swift in Sources */,
+				CD7A0BEB2B98EFB000A35A9A /* CoreBluetoothClockClient.swift in Sources */,
+				CD84F2312B9254B5006DF5F9 /* BatteryState.swift in Sources */,
+				CD7A0BEE2B98F12A00A35A9A /* ClockState.swift in Sources */,
 				CD84F22B2B92531C006DF5F9 /* ConnectionError.swift in Sources */,
 				CD84F2282B925179006DF5F9 /* Clock.swift in Sources */,
 			);
@@ -341,25 +333,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD98F28F2B936AED0066E56C /* BatteryPowered.swift in Sources */,
-				CD98F2922B936AF50066E56C /* Hygrometer.swift in Sources */,
+				CD98F28F2B936AED0066E56C /* BatteryState.swift in Sources */,
+				CD98F2922B936AF50066E56C /* HygrometerState.swift in Sources */,
 				CD98F2962B936B080066E56C /* BluetoothClockClient.swift in Sources */,
 				CD98F2952B936B040066E56C /* ConnectionError.swift in Sources */,
 				CD98F2932B936AF70066E56C /* MockClock.swift in Sources */,
 				CD98F2912B936AF20066E56C /* ClockModel.swift in Sources */,
 				CD84F23E2B925A6C006DF5F9 /* DiscoveryState.swift in Sources */,
+				CD1C86F72B937C6B00E4E492 /* DeviceError.swift in Sources */,
 				CD0E1B792735A9FE00FE4477 /* Application.swift in Sources */,
 				CD98F2942B936AFB0066E56C /* Time.swift in Sources */,
 				CD0E1BEF2736D41900FE4477 /* ClockListView.swift in Sources */,
 				CD0E1BE22736D3BC00FE4477 /* BinUtils.swift in Sources */,
 				CD84F2442B927F65006DF5F9 /* CardView.swift in Sources */,
-				CD0E1BE02736D3BC00FE4477 /* BLEDeviceModel.swift in Sources */,
 				CD98F28E2B936AEA0066E56C /* XiaomiLYWSD02.swift in Sources */,
-				CD0E1BE82736D3BC00FE4477 /* LYWSD02.swift in Sources */,
 				CD0E1BF12736D41900FE4477 /* ClockDetailsView.swift in Sources */,
+				CD7A0BEC2B98EFB000A35A9A /* CoreBluetoothClockClient.swift in Sources */,
 				CD98F2902B936AEF0066E56C /* Clock.swift in Sources */,
-				CD98F28D2B936AE40066E56C /* Thermometer.swift in Sources */,
-				CD0E1BEA2736D3BC00FE4477 /* BluetoothClient.swift in Sources */,
+				CD98F28D2B936AE40066E56C /* ThermometerState.swift in Sources */,
+				CD7A0BEF2B98F12A00A35A9A /* ClockState.swift in Sources */,
 				CD84F2412B925D71006DF5F9 /* DiscoveryError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -562,7 +554,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Application/macOS-Info.plist";
+				INFOPLIST_FILE = macOS/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Bluetooth is used to connect to your clock";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -595,7 +587,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Application/macOS-Info.plist";
+				INFOPLIST_FILE = macOS/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Bluetooth is used to connect to your clock";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";

@@ -10,10 +10,17 @@ import SwiftUI
 
 struct ClockDetailsView: View {
     var clock: any Clock
+    var bluetoothClient: BluetoothClockClient
 
     var body: some View {
         VStack {
-            XiaomiLYWSD02ClockView(clock: clock)
+            if let state = clock.lastState {
+                XiaomiLYWSD02ClockView(clock: state)
+            } else {
+                ProgressView {
+                    Text("Connecting...")
+                }
+            }
 
             List {
                 Section {
@@ -32,42 +39,44 @@ struct ClockDetailsView: View {
                             .foregroundColor(.secondary)
                             .font(.subheadline)
                     }
-                    
-                    HStack {
-                        Text("Time")
-                        Spacer()
-                        Text(clock.time.date, style: .time)
-                            .foregroundColor(.secondary)
-                            .font(.subheadline)
-                    }
-                    
-                    if let batteryPowered = clock as? BatteryPowered {
+
+                    if let state = clock.lastState {
                         HStack {
-                            Text("Battery level")
+                            Text("Time")
                             Spacer()
-                            Text("\(batteryPowered.batteryLevel)%")
+                            Text(state.time.date, style: .time)
                                 .foregroundColor(.secondary)
                                 .font(.subheadline)
                         }
-                    }
-                    
-                    if let thermometer = clock as? Thermometer {
-                        HStack {
-                            Text("Temperature")
-                            Spacer()
-                            Text("\(thermometer.temperature) °\(thermometer.temperatureUnit.asString())")
-                                .foregroundColor(.secondary)
-                                .font(.subheadline)
+
+                        if let batteryPowered = state as? BatteryState {
+                            HStack {
+                                Text("Battery level")
+                                Spacer()
+                                Text("\(batteryPowered.batteryLevel)%")
+                                    .foregroundColor(.secondary)
+                                    .font(.subheadline)
+                            }
                         }
-                    }
-                    
-                    if let hygrometer = clock as? Hygrometer {
-                        HStack {
-                            Text("Humidity")
-                            Spacer()
-                            Text("\(hygrometer.humidity)%")
-                                .foregroundColor(.secondary)
-                                .font(.subheadline)
+
+                        if let thermometer = state as? ThermometerState {
+                            HStack {
+                                Text("Temperature")
+                                Spacer()
+                                Text("\(thermometer.temperature) °\(thermometer.temperatureUnit.asString())")
+                                    .foregroundColor(.secondary)
+                                    .font(.subheadline)
+                            }
+                        }
+
+                        if let hygrometer = state as? HygrometerState {
+                            HStack {
+                                Text("Humidity")
+                                Spacer()
+                                Text("\(hygrometer.humidity)%")
+                                    .foregroundColor(.secondary)
+                                    .font(.subheadline)
+                            }
                         }
                     }
                 } header: {
@@ -83,11 +92,17 @@ struct ClockDetailsView: View {
                 Text("Sync")
             }
         }
-//        .onAppear {
-//            bleClient.connect(to: peripheral)
-//        }.onDisappear {
-//            bleClient.disconnect(peripheral)
-//        }.popover(isPresented: $isPopoverPresented) {
+        .onAppear {
+            do {
+                try bluetoothClient.connect(to: clock)
+            } catch {
+                print(error)
+            }
+        }
+        // .onDisappear {
+        //    bleClient.disconnect(peripheral)
+        // }
+        // .popover(isPresented: $isPopoverPresented) {
 //            VStack {
 //                HStack {
 //                    DatePicker("", selection: $targetDate)
@@ -112,7 +127,6 @@ struct ClockDetailsView: View {
     }
 }
 
-
 #Preview("Mock clock") {
-    ClockDetailsView(clock: MockClock())
+    ClockDetailsView(clock: MockClock(), bluetoothClient: MockBluetoothClockClient())
 }
